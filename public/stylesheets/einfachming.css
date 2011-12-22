@@ -192,8 +192,12 @@ header ul li span {
   width: 180px;
   height: 210px;
 }
+/* line 196, ../../src/sass/einfachming.scss */
+#einfachming img {
+  border: 0;
+}
 
-/* line 197, ../../src/sass/einfachming.scss */
+/* line 201, ../../src/sass/einfachming.scss */
 #definition {
   display: none;
   min-width: 300px;
@@ -205,11 +209,11 @@ header ul li span {
   text-align: center;
   letter-spacing: 1px;
 }
-/* line 212, ../../src/sass/einfachming.scss */
+/* line 216, ../../src/sass/einfachming.scss */
 #definition .italics {
   font-style: italic;
 }
-/* line 216, ../../src/sass/einfachming.scss */
+/* line 220, ../../src/sass/einfachming.scss */
 #definition .mark {
   color: #ef374e;
 }
