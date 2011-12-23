@@ -57,7 +57,7 @@ header {
 
       color: #fff;
 
-      font-family: Times, serif;
+      font-family: museo-slab, serif;
       font-size: 16px;
       font-weight: lighter;
 
@@ -97,9 +97,9 @@ header {
 
     color: #fff;
 
-    font-family: Times, serif;
+    font-family: museo-slab, serif;
     font-size: 32px;
-    font-weight: lighter;
+    font-weight: 300;
 
     line-height: 28px;
     letter-spacing: 1px;
@@ -118,15 +118,16 @@ header {
 
       color: #fff;
 
-      font-family: Times, serif;
+      font-family: museo-slab, serif;
       font-size: 18px;
       font-style: italic;
 
+      line-height: 18px;
       letter-spacing: 1px;
     }
 
     p.time {
-      margin-bottom: -5px;
+      margin-bottom: 0px;
 
       color: #fff;
 
@@ -159,15 +160,16 @@ header {
 
       color: #fff;
 
-      font-family: Times, serif;
-      font-size: 18px;
+      font-family: museo-slab, serif;
+      font-size: 16px;
       font-style: italic;
 
-     letter-spacing: 1px;
+      line-height: 16px;
+      letter-spacing: 1px;
     }
 
     p.time {
-      margin-bottom: -5px;
+      margin-bottom: 0px;
 
       color: #000;
 
@@ -206,12 +208,13 @@ header {
 
   color: #fff;
 
-  font-family: Times, serif;
+  font-family: museo-slab, serif;
   font-size: 32px;
   font-weight: lighter;
 
   text-align: center;
   letter-spacing: 1px;
+  line-height: 33px;
 
   .italics {
     font-style: italic;

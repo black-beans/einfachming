@@ -14,6 +14,12 @@
   %script{ src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
   %script{ src: '/einfachming/javascripts/einfachming.js' }
 
+  %script{ src: 'http://use.typekit.com/lka2rnl.js' }
+  :javascript
+    try {
+      Typekit.load();
+    } catch(e) {}
+
   %noscript
     %meta{ 'http-equiv' => 'Refresh', content: '0; URL=/einfachming/home.html' }
 
@@ -29,8 +35,8 @@
 
   #definition
     %sup> 7
-    %span.italics> einfac
-    hming: ein|fach; Amet, (lorem
+    %span.italics> einfach
+    ming: ein|fach; Amet, (lorem
     %span.mark ipsumelm
     ) est dolor facile [amet el dolor] Gait Comsequat, conse commy nullan et
     %span.mark ametue
