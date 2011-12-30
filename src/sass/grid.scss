@@ -14,14 +14,18 @@ $ninesixty-columns: 24;
   @include grid-container;
 
   header {
-    @include grid(24);
+    @include grid-prefix(1);
+    @include grid(22);
+    @include grid-suffix(1);
   }
 
   #sidebar {
-    @include grid(8);
+    @include grid(7);
+    @include grid-suffix(1);
   }
 
   #content {
-    @include grid(16);
+    @include grid-prefix(1);
+    @include grid(15);
   }
 }
