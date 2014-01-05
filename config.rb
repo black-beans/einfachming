@@ -1,26 +1,101 @@
+###
+# Compass
+###
+
+# Susy grids in Compass
+# First: gem install susy
+# require 'susy'
 require 'ninesixty'
-# Require any additional compass plugins here.
 
+# Change Compass configuration
+# compass_config do |config|
+#   config.output_style = :compact
+# end
 
-# Set this to the root of your project when deployed:
-http_path = "/einfachming"
-css_dir = "public/stylesheets"
-sass_dir = "src/sass"
-images_dir = "public/images"
-javascripts_dir = "public/javascripts"
+###
+# Page options, layouts, aliases and proxies
+###
 
-# You can select your preferred output style here (can be overridden via the command line):
-# output_style = :expanded or :nested or :compact or :compressed
+# Per-page layout changes:
+#
+# With no layout
+# page "/path/to/file.html", :layout => false
+#
+# With alternative layout
+# page "/path/to/file.html", :layout => :otherlayout
+#
+# A path which all have the same layout
+# with_layout :admin do
+#   page "/admin/*"
+# end
 
-# To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+page 'robots.txt', layout: false
+page 'humans.txt', layout: false
+page 'sitemap.xml', layout: false
 
-# To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+# Proxy (fake) files
+# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
+#   @which_fake_page = "Rendering a fake page with a variable"
+# end
 
+###
+# Helpers
+###
 
-# If you prefer the indented syntax, you might want to regenerate this
-# project again passing --syntax sass, or you can uncomment this:
-# preferred_syntax = :sass
-# and then run:
-# sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+# Automatic image dimensions on image_tag helper
+# activate :automatic_image_sizes
+
+# Methods defined in the helpers block are available in templates
+# helpers do
+#   def some_helper
+#     "Helping"
+#   end
+# end
+
+set :css_dir, 'styles'
+
+set :js_dir, 'scripts'
+
+set :images_dir, 'images'
+
+helpers do
+  def nav_link(name, url, opts={})
+    current_url = current_resource.url
+    if current_url == url_for(url) || current_url == url_for(url) + '/'
+      opts[:class] = 'current'
+    end
+    link_to(name, url, opts)
+  end
+end
+
+# set :relative_links, true
+
+# Build-specific configuration
+#
+configure :build do
+
+  # Enable live reload while working locally
+  activate :livereload
+
+  # For example, change the Compass output styles for deployment
+  activate :minify_css
+  activate :minify_javascript
+
+  # Enable cache buster
+  activate :cache_buster
+
+  # Use relative URLs
+  # activate :relative_assets
+
+  # Compress PNGs after build
+  # activate :smusher
+
+  # Build with nice urls
+  activate :directory_indexes
+
+end
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket = 'www.einfachming.ch'
+  s3_sync.region = 'eu-west-1'
+end

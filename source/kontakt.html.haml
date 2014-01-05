@@ -1,0 +1,51 @@
+---
+layout: 'default'
+---
+%h1
+  %span> Kontakt
+  , Kon•tạkt,
+  = succeed ',' do
+    %em der; -(e)s, -e
+  %strong 1.
+  durch Gespräche und Treffen aufrecht erhaltene Verbindung,
+  %strong 2.
+  %em (seltener)
+  Berührung,
+  %strong 3.
+  der Austausch von Informationen.
+
+%p Wir freuen uns auf den persönlichen Kontakt mit Ihnen!
+%p
+  einfachming . Büro für Kommunikation
+  %br/
+  Zeppelinstrasse 51
+  %br/
+  CH-8057 Zürich . Schweiz
+  %br/
+  T +41 43 499 77 09 .
+  %a{href: 'mailto:info@einfachming.ch'} info@einfachming.ch
+  \.
+  = link_to 'www.einfachming.ch', '/index.html'
+
+%ul#portraits.contact
+  %li
+    = link_to '/portrait/nicole-ming.html' do
+      %img{alt: 'Portrait_Nicole_Ming', src: '/images/portrait/Portrait_Nicole_Ming.jpg'}/
+    %span Nicole Ming
+    Inhaberin
+    %br/
+    %a{href: 'mailto:nicole@einfachming.ch'} nicole@einfachming.ch
+    \.  M +41 79 890 77 99
+    %br/
+    %a{href: '/portrait/Nicole_Ming.vcf'} V-Card
+
+  %li
+    = link_to '/portrait/anne-britt-tobler.html' do
+      %img{alt: 'Portrait_Anne_Britt_Tobler', src: '/images/portrait/Portrait_Anne_Britt_Tobler.jpg'}/
+    %span Anne Britt Tobler
+    Beraterin für Kommunikation und Medienarbeit
+    %br/
+    (Bis Ende 2013 im Mutterschaftsurlaub)
+    %br/
+    / a href='mailto:annebritt@einfachming.ch'>annebritt@einfachming.ch</a> . M +41 78 696 44 70<br/
+    %a{href: '/portrait/Anne_Britt_Tobler.vcf'} V-Card

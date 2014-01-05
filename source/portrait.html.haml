@@ -1,0 +1,27 @@
+---
+layout: 'default'
+---
+%h1
+  %span> Portrait
+  ,
+  = succeed ',' do
+    %em das
+  bildliche Darstellung einer oder mehrerer Personen.
+
+%ul#portraits
+  %li
+    = link_to '/portrait/nicole-ming.html' do
+      %img{alt: 'Portrait_Nicole_Ming', src: '/images/portrait/Portrait_Nicole_Ming.jpg'}/
+    %span Nicole Ming
+    Inhaberin
+    %br/
+    = link_to 'Zum Profil', '/portrait/nicole-ming.html', class: 'profile'
+  %li
+    = link_to '/portrait/anne-britt-tobler.html' do
+      %img{alt: 'Portrait_Anne_Britt_Tobler', src: '/images/portrait/Portrait_Anne_Britt_Tobler.jpg'}/
+    %span Anne Britt Tobler
+    Beraterin für Kommunikation und Medienarbeit
+    %br/
+    (Bis Ende 2013 im Mutterschaftsurlaub)
+    %br/
+    = link_to 'Zum Profil', '/portrait/anne-britt-tobler.html', class: 'profile'

@@ -1,0 +1,36 @@
+---
+layout: 'default'
+---
+%h1
+  %span> Nicole Ming
+  ,
+  = succeed ',' do
+    %em die
+  Jg. 1979, aus Obwalden, ein Kind, lebt in Zürich.
+
+%img{alt: 'Nicole Ming', height: '266', src: '/images/portrait/Nicole_Ming.jpg', width: '580'}/
+%h2
+  Berufliche Stationen
+%ul
+  %li
+    Lic. Phil. I
+    %a{href: 'http://www.uzh.ch/index.html'} Universität Zürich
+    in Politikwissenschaften, Publizistik und Wirtschaftsgeschichte
+  %li
+    Leiterin Public Relations / Public Affairs beim Schweizer Aussenwirtschaftsförderer
+    %a{href: 'http://www.osec.ch/'} Osec
+  %li
+    Redaktorin beim Schweizer Fernsehen für die Politdiskussionssendung
+    %a{href: 'http://www.arena.sf.tv/'} Arena
+    und das Wirtschaftsmagazin
+    = succeed '.' do
+      %a{href: 'http://www.eco.sf.tv/'} ECO
+  %li
+    Senior Consultant in der Kommunikationsagentur
+    = succeed '.' do
+      %a{href: 'http://www.contractmedia.ch/'} Contract Media AG
+  %li
+    Seit September 2010 selbständige Kommunikationsberaterin.
+
+= link_to 'Zurück zu den Portraits', '/portrait.html', class: 'profile_return'
+

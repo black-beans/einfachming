@@ -1,0 +1,58 @@
+= wrap_layout :layout do
+  #container
+    %header
+      %nav
+        %ul
+          %li
+            = link_to '/willkommen.html' do
+              %span> einfach
+              ming
+          %li
+            = link_to 'dienstleistungen', '/dienstleistungen.html'
+          %li
+            = link_to 'kunden', '/kunden.html'
+          %li
+            = link_to 'portrait', '/portrait.html'
+          %li
+            = link_to 'kontakt', '/kontakt.html'
+          %li
+            = link_to 'lageplan', '/lageplan.html'
+
+    #content
+
+      = yield
+
+    #sidebar
+      = link_to '/index.html' do
+        %img{height: '83', src: '/images/lilie.png', width: '66'}/
+      .news
+        %p.time.current
+        %h3
+          Nur Mut!
+        %p
+          %cite
+            «Wir wagen es nicht, weil es schwer ist, sondern weil wir es nicht wagen,
+            ist es schwer.»
+            %em Lucius Annaeus Seneca
+      .news
+        %p.time
+          2. Juli 2013
+        %h3
+          Alles Liebe!
+        %p
+          Anne Britt Tobler weilt ab sofort im Mutterschaftsurlaub bis voraussichtlich Ende 2013. Zur Geburt ihrer Tochter unsere herzlichen Glückwünsche!
+      .news
+        %p.time
+          22. November 2012
+        %h3
+          Neuer Anstrich
+        %p
+          Seit gut zwei Jahren gibt es unser Büro nun bereits – höchste Zeit für ein sanftes Redesign. Wir haben unsere Corporate Identity überarbeitet und evolutionär weiterentwickelt. Danke an Katrin Ming, die uns die visuelle Identität gegeben hat, die zu uns passt!
+  %footer
+    #copy
+      © einfachming . Büro für Kommunikation 2013
+    #social
+      %a{href: 'https://twitter.com/#!/einfachMING'}
+        %img{alt: 'Twitter', height: '24', src: '/images/twitter_newbird_blue.png', width: '24'}/
+      %a{href: 'http://www.facebook.com/#!/pages/Einfachming-Büro-für-Kommunikation/330503843633986'}
+        %img{alt: 'Facebook', height: '24', src: '/images/f_logo.png', width: '24'}/
