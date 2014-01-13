@@ -231,39 +231,54 @@ body > footer {
   }
 }
 
-#einfachming {
-  display: none;
-  width: 180px;
-  height: 210px;
-
-  img {
-    border: 0;
-  }
+html, body {
+  height: 100%;
 }
 
-#definition {
-  display: none;
-  min-width: 300px;
-  max-width: 720px;
-  color: #fff;
-  font-family: Times New Roman, Times, serif;
-  font-size: 26px;
-  font-weight: lighter;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 26px;
+#center {
+  position: relative;
+  overflow: auto;
 
-  em {
-    font-style: italic;
+  height: 100%;
+  width: 720px;
+  margin: auto;
+
+  #einfachming {
+    position: absolute;
+    display: none;
+    width: 180px;
+    height: 210px;
+
+    img {
+      border: 0;
+    }
   }
 
-  p {
-    margin: 0;
+  #definition {
+    position: absolute;
+    display: none;
+    min-width: 300px;
+    max-width: 720px;
+    color: #fff;
+    font-family: Times New Roman, Times, serif;
+    font-size: 26px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 26px;
 
-    &.intro a {
+    em {
       font-style: italic;
-      font-weight: bold;
-      color: #fff;
+    }
+
+    p {
+      margin: 0;
+
+      &.intro a {
+        font-style: italic;
+        font-weight: bold;
+        color: #fff;
+      }
     }
   }
 }
