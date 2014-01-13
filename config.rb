@@ -74,6 +74,8 @@ end
 #
 configure :build do
 
+  activate :asset_hash
+
   # Enable live reload while working locally
   activate :livereload
 
