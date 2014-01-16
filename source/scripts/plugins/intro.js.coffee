@@ -1,6 +1,6 @@
 $(->
 
-  scene = $('#center')
+  scene = $('#scene')
   definition = $('#definition')
   definition.css('position','absolute')
   definition.css('left', (($(scene).width() - definition.outerWidth()) / 2) + $(scene).scrollLeft() + 'px')
