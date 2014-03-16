@@ -10,7 +10,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    colorize (0.6.0)
+    colorize (0.7.0)
     compass (0.12.3)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -72,7 +72,7 @@ GEM
       middleman-core (~> 3.2)
       multi_json (~> 1.8.4)
       rack-livereload (~> 0.3.15)
-    middleman-s3_sync (3.0.24)
+    middleman-s3_sync (3.0.25)
       colorize
       fog (>= 1.10.1)
       map
@@ -85,7 +85,7 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
-    mime-types (2.1)
+    mime-types (2.2)
     mini_portile (0.5.2)
     multi_json (1.8.4)
     net-scp (1.1.2)
@@ -106,7 +106,7 @@ GEM
       ffi (>= 0.5.0)
     ruby-progressbar (1.4.2)
     sass (3.2.14)
-    sprockets (2.11.0)
+    sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
